@@ -18,6 +18,8 @@ typedef struct s_ftlist
 	fttest fct;
 } t_ftlist;
 
-t_ftlist funct_list[] = {
-	{NULL, NULL}};
+extern const t_ftlist funct_list[];
+
+int run_tests(char *ft_name);
+
 #endif

@@ -1,7 +1,5 @@
 #include "libft_tester.h"
 
-int run_tests(char *ft_name);
-
 int main(int argc, char **argv)
 {
 	int passed_test = 0;
