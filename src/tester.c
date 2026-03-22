@@ -11,38 +11,39 @@ int main(int argc, char **argv)
 		return (1);
 	}
 
+	printf("---------------------TESTING--------------------------\n\n");
 	// Check if all tests are to be runned. If not run only the test
-	// for functions specified in arguments
+	// for the functions specified in arguments
 	if (!strcmp(argv[1], "all"))
 	{
-		// Run every function on funct_list
-		for (size_t i = 0; funct_list[i].name != NULL; i++)
+		for (int i = 0; funct_list[i].name != NULL; i++)
 		{
-			printf("\nExecuting '%s' test\n", funct_list[i].name);
+			printf("⚡ Executing '%s' test:\n\n", funct_list[i].name);
 			if (funct_list[i].fct())
+			{
+				printf("\t🟢 TEST SUCCESSFUL\n");
 				passed_test++;
+			}
+			else
+				printf("\t🔴 TEST FAILED\n");
 		}
 	}
 	else
 	{
-		for (size_t i = 1; i < argc; i++)
+		for (int i = 1; i < argc; i++)
 		{
+			printf("⚡ Executing '%s' test:\n\n", argv[i]);
 			if (run_test(argv[i]))
+			{
+				printf("\t🟢 TEST SUCCESSFUL\n");
 				passed_test++;
+			}
+			else
+				printf("\t🔴 TEST FAILED\n");
 		}
 	}
 
-	printf("Total test passed: %d/%d.\n", passed_test, argc - 1);
-	return (0);
-}
-
-int run_test(char *ft_name)
-{
-	for (size_t i = 0; funct_list[i].name != NULL; i++)
-	{
-		if (!strcmp(ft_name, funct_list[i].name))
-			return (funct_list[i].fct());
-	}
-	printf("\nError : Unknown function (%s)\n", ft_name);
+	printf("\n---------------------RESULTS--------------------------\n");
+	printf("Total tests passed: %d/%d.\n", passed_test, argc - 1);
 	return (0);
 }

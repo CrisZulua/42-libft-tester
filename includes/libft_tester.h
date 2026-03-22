@@ -1,10 +1,7 @@
 #ifndef LIBFT_TESTER_H
 #define LIBFT_TESTER_H
 
-// libft.h Header Path
-#define LIBFT_PATH "../../libft/libft.h"
-
-#include LIBFT_PATH
+#include "libft.h"
 #include <stdio.h>
 #include <string.h>
 
@@ -20,6 +17,6 @@ typedef struct s_ftlist
 
 extern const t_ftlist funct_list[];
 
-int run_tests(char *ft_name);
+int run_test(char *ft_name);
 
 #endif
