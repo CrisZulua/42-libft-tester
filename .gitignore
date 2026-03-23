@@ -1,0 +1,4 @@
+/objects/*
+/objects
+*.o
+*.d
