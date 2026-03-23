@@ -8,7 +8,7 @@ const t_ftlist funct_list[] = {
 	{"ft_strchr", test_ft_strchr},
 	{"ft_strrchr", test_ft_strrchr},
 	{"ft_strncmp", test_ft_strncmp},
-	// {"ft_strnstr", test_ft_strnstr},
+	{"ft_strnstr", test_ft_strnstr},
 	// {"ft_memset", test_ft_memset},
 	// {"ft_memcpy", test_ft_memcpy},
 	// {"ft_memmove", test_ft_memmove},
