@@ -11,14 +11,14 @@ int main(int argc, char **argv)
 		return (1);
 	}
 
-	printf("---------------------TESTING--------------------------\n\n");
 	// Check if all tests are to be runned. If not run only the test
 	// for the functions specified in arguments
+	printf("---------------------TESTING--------------------------\n\n");
 	if (!strcmp(argv[1], "all"))
 	{
 		for (int i = 0; funct_list[i].name != NULL; i++)
 		{
-			printf("⚡ Executing '%s' test:\n\n", funct_list[i].name);
+			printf("⚡ Executing '%s' test:\n", funct_list[i].name);
 			if (funct_list[i].fct())
 			{
 				printf("\t🟢 TEST SUCCESSFUL\n");
@@ -32,7 +32,7 @@ int main(int argc, char **argv)
 	{
 		for (int i = 1; i < argc; i++)
 		{
-			printf("⚡ Executing '%s' test:\n\n", argv[i]);
+			printf("⚡ Executing '%s' test:\n", argv[i]);
 			if (run_test(argv[i]))
 			{
 				printf("\t🟢 TEST SUCCESSFUL\n");

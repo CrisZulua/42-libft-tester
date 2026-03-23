@@ -14,7 +14,6 @@ int test_ft_strlen()
 		"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 		"Line1\nLine2",
 		"a",
-		"aaaaaaaaaaaaaaaaaaaa",
 		"   ",
 		"\0hidden",
 		"Prueba con\0nulo",

@@ -1,21 +1,21 @@
-NAME        = tester
+NAME = tester
 
 # Change LIBFT_PATH to your libft repository
-LIBFT_PATH  = ../libft
-LIBFT       = $(LIBFT_PATH)/libft.a
+LIBFT_PATH = ../libft
+LIBFT = $(LIBFT_PATH)/libft.a
 
-CC          = cc
-FLAGS       = -Wall -Werror -Wextra -Iincludes -I$(LIBFT_PATH)
+CC = cc
+FLAGS = -Wall -Werror -Wextra -Iincludes -I$(LIBFT_PATH)
 
-O_FLAGS     = -MMD -MP
-L_FLAGS     = -L$(LIBFT_PATH) -lft
+O_FLAGS = -MMD -MP
+L_FLAGS = -L$(LIBFT_PATH) -lft
 
-OBJDIR      = objects
+OBJDIR = objects
 
-SRC         = $(shell find src -name "*.c")
+SRC = $(shell find src -name "*.c")
 
-OBJ         = $(SRC:%.c=$(OBJDIR)/%.o)
-DEP         = $(OBJ:.o=.d)
+OBJ = $(SRC:%.c=$(OBJDIR)/%.o)
+DEP = $(OBJ:.o=.d)
 
 all: $(NAME)
 
