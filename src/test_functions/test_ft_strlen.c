@@ -1,5 +1,4 @@
 #include "libft_tester.h"
-#include "ft_tester.h"
 
 int test_ft_strlen()
 {
@@ -33,5 +32,5 @@ int test_ft_strlen()
 			printf("\t❌ FAIL TEST %-3d ❌\tExpected : %-5lu , Got : %-5lu\n", i, res_sys, res_ft);
 	}
 
-	return (passed);
+	return (passed == num_tests);
 }

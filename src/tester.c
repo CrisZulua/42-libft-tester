@@ -13,37 +13,37 @@ int main(int argc, char **argv)
 
 	// Check if all tests are to be runned. If not run only the test
 	// for the functions specified in arguments
-	printf("---------------------TESTING--------------------------\n\n");
+	printf(BLUE "---------------------TESTING--------------------------\n\n" RST);
 	if (!strcmp(argv[1], "all"))
 	{
 		for (int i = 0; funct_list[i].name != NULL; i++)
 		{
-			printf("⚡ Executing '%s' test:\n", funct_list[i].name);
+			printf(BLUE "⚡ Executing '%s' test:\n" RST, funct_list[i].name);
 			if (funct_list[i].fct())
 			{
-				printf("\t🟢 TEST SUCCESSFUL\n");
+				printf(GREEN ITALIC "\t🟢 TEST SUCCESSFUL\n" RST);
 				passed_test++;
 			}
 			else
-				printf("\t🔴 TEST FAILED\n");
+				printf(RED ITALIC "\t🔴 TEST FAILED\n" RST);
 		}
 	}
 	else
 	{
 		for (int i = 1; i < argc; i++)
 		{
-			printf("⚡ Executing '%s' test:\n", argv[i]);
+			printf(BLUE "⚡ Executing '%s' test:\n" RST, argv[i]);
 			if (run_test(argv[i]))
 			{
-				printf("\t🟢 TEST SUCCESSFUL\n");
+				printf(GREEN ITALIC "\t🟢 TEST SUCCESSFUL\n" RST);
 				passed_test++;
 			}
 			else
-				printf("\t🔴 TEST FAILED\n");
+				printf(RED ITALIC "\t🔴 TEST FAILED\n" RST);
 		}
 	}
 
-	printf("\n---------------------RESULTS--------------------------\n");
-	printf("Total tests passed: %d/%d.\n", passed_test, strcmp(argv[1], "all") ? argc - 1 : 2);
+	printf(BLUE "\n---------------------RESULTS--------------------------\n");
+	printf("Total tests passed: %d/%d.\n" RST, passed_test, strcmp(argv[1], "all") ? argc - 1 : 0);
 	return (0);
 }

@@ -45,5 +45,5 @@ int test_ft_strlcpy(void)
 			printf("\t❌ FAIL TEST %-3d ❌\tExpected : %-15lu , Got : %-15lu\n", i, tests[i].expected_len, res_ft);
 	}
 	free(buff);
-	return (passed);
+	return (passed == num_tests);
 }
