@@ -40,9 +40,9 @@ int test_ft_strlcpy(void)
 		if (res_ft == tests[i].expected_len && !cmp)
 			passed++;
 		else if (cmp)
-			printf("\t❌ FAIL TEST %-3d ❌\tExpected : %-15s , Got : %-15s\n", i, tests[i].expected_dest, buff);
+			printf("\t❌   FAILED TEST %-2d ❌\tExpected : %-15s , Got : %-15s\n", i, tests[i].expected_dest, buff);
 		else
-			printf("\t❌ FAIL TEST %-3d ❌\tExpected : %-15lu , Got : %-15lu\n", i, tests[i].expected_len, res_ft);
+			printf("\t❌   FAILED TEST %-2d ❌\tExpected : %-15lu , Got : %-15lu\n", i, tests[i].expected_len, res_ft);
 	}
 	free(buff);
 	return (passed == num_tests);

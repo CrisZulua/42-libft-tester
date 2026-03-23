@@ -9,12 +9,12 @@ int test_ft_strchr(void);
 int test_ft_strrchr(void);
 int test_ft_strncmp(void);
 int test_ft_strnstr(void);
-// int test_ft_memset(void);
-// int test_ft_memcpy(void);
-// int test_ft_memmove(void);
-// int test_ft_memchr(void);
-// int test_ft_memcmp(void);
-// int test_ft_strdup(void);
+int test_ft_memset(void);
+int test_ft_memcpy(void);
+int test_ft_memmove(void);
+int test_ft_memchr(void);
+int test_ft_memcmp(void);
+int test_ft_strdup(void);
 
 // // ── strings.h ───────────────────────────────────────────────
 // int test_ft_bzero(void);

@@ -19,6 +19,7 @@ int test_ft_strnstr()
 		{"Hello \0World!", "W", NULL, 4},
 		{"Hello \0World!", "", "Hello ", 4},
 		{"", "hello", NULL, 4},
+		{"Hello world", "d", "d", 11},
 		{"42", "42 piscine", NULL, 15}};
 
 	int num_tests = sizeof(tests) / sizeof(tests[0]);
@@ -31,14 +32,14 @@ int test_ft_strnstr()
 		if (ptr)
 		{
 			if (!tests[i].res_expected)
-				printf("\t❌ FAIL TEST %-3d ❌\tExpected : %-15s , Got : %-15s\n", i, "NULL", ptr);
+				printf("\t❌   FAILED TEST %-2d ❌\tExpected : %-15s , Got : %-15s\n", i, "NULL", ptr);
 			else if (strcmp(tests[i].res_expected, ptr))
-				printf("\t❌ FAIL TEST %-3d ❌\tExpected : %-15s , Got : %-15s\n", i, tests[i].res_expected, ptr);
+				printf("\t❌   FAILED TEST %-2d ❌\tExpected : %-15s , Got : %-15s\n", i, tests[i].res_expected, ptr);
 			else
 				passed++;
 		}
 		else if (tests[i].res_expected)
-			printf("\t❌ FAIL TEST %-3d ❌\tExpected : %-15s , Got : %-15s\n", i, tests[i].res_expected, "NULL");
+			printf("\t❌   FAILED TEST %-2d ❌\tExpected : %-15s , Got : %-15s\n", i, tests[i].res_expected, "NULL");
 		else
 			passed++;
 	}

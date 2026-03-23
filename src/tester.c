@@ -21,11 +21,11 @@ int main(int argc, char **argv)
 			printf(BLUE "⚡ Executing '%s' test:\n" RST, funct_list[i].name);
 			if (funct_list[i].fct())
 			{
-				printf(GREEN ITALIC "\t🟢 TEST SUCCESSFUL\n" RST);
+				printf(GREEN ITALIC "\t● TEST SUCCESSFUL\n" RST);
 				passed_test++;
 			}
 			else
-				printf(RED ITALIC "\t🔴 TEST FAILED\n" RST);
+				printf(RED ITALIC "\t● TEST FAILED\n" RST);
 		}
 	}
 	else
@@ -35,11 +35,11 @@ int main(int argc, char **argv)
 			printf(BLUE "⚡ Executing '%s' test:\n" RST, argv[i]);
 			if (run_test(argv[i]))
 			{
-				printf(GREEN ITALIC "\t🟢 TEST SUCCESSFUL\n" RST);
+				printf(GREEN ITALIC "\t● TEST SUCCESSFUL\n" RST);
 				passed_test++;
 			}
 			else
-				printf(RED ITALIC "\t🔴 TEST FAILED\n" RST);
+				printf(RED ITALIC "\t● TEST FAILED\n" RST);
 		}
 	}
 

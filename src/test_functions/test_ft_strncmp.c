@@ -32,7 +32,7 @@ int test_ft_strncmp()
 		if (res_sys == res_ft)
 			passed++;
 		else
-			printf("\t❌ FAIL TEST %-3d ❌\tExpected : %-5d , Got : %-5d\n", i, res_sys, res_ft);
+			printf("\t❌   FAILED TEST %-2d ❌\tExpected : %-5d , Got : %-5d\n", i, res_sys, res_ft);
 	}
 
 	return (passed == num_tests);

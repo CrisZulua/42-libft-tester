@@ -29,7 +29,7 @@ int test_ft_strrchr(void)
 		if (res_sys == res_ft)
 			passed++;
 		else
-			printf("\t❌ FAIL TEST %-3d ❌\tExpected : %-15p , Got : %-15p\n", i, res_sys, res_ft);
+			printf("\t❌   FAILED TEST %-2d ❌\tExpected : %-15p , Got : %-15p\n", i, res_sys, res_ft);
 	}
 	return (passed == num_tests);
 }

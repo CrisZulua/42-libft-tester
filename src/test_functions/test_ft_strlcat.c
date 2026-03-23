@@ -42,9 +42,9 @@ int test_ft_strlcat(void)
 		if (res_ft == tests[i].expected_ret && !cmp)
 			passed++;
 		else if (cmp)
-			printf("\t❌ FAIL TEST %-3d ❌\tExpected : %-15s , Got : %-15s\n", i, tests[i].expected_dst, tests[i].dst_init);
+			printf("\t❌   FAILED TEST %-2d ❌\tExpected : %-15s , Got : %-15s\n", i, tests[i].expected_dst, tests[i].dst_init);
 		else
-			printf("\t❌ FAIL TEST %-3d ❌\tExpected : %-15lu , Got : %-15lu\n", i, tests[i].expected_ret, res_ft);
+			printf("\t❌   FAILED TEST %-2d ❌\tExpected : %-15lu , Got : %-15lu\n", i, tests[i].expected_ret, res_ft);
 	}
 	return (passed == num_tests);
 }
