@@ -3,7 +3,7 @@
 
 // ── string.h ────────────────────────────────────────────────
 int test_ft_strlen(void);
-// int test_ft_strlcpy(void);
+int test_ft_strlcpy(void);
 // int test_ft_strlcat(void);
 // int test_ft_strchr(void);
 // int test_ft_strrchr(void);

@@ -3,7 +3,7 @@
 
 const t_ftlist funct_list[] = {
 	{"ft_strlen", test_ft_strlen},
-	// {"ft_strlcpy", test_ft_strlcpy},
+	{"ft_strlcpy", test_ft_strlcpy},
 	// {"ft_strlcat", test_ft_strlcat},
 	// {"ft_strchr", test_ft_strchr},
 	// {"ft_strrchr", test_ft_strrchr},
