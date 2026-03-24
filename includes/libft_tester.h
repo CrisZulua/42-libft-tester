@@ -2,6 +2,7 @@
 #define LIBFT_TESTER_H
 
 #include "libft.h"
+#include <stdint.h>
 #include <stdio.h>
 #include <string.h>
 #include <strings.h>

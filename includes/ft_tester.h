@@ -28,8 +28,8 @@ int test_ft_isprint(void);
 int test_ft_toupper(void);
 int test_ft_tolower(void);
 // // ── stdlib.h ────────────────────────────────────────────────
-// int test_ft_atoi(void);
-// int test_ft_calloc(void);
+int test_ft_atoi(void);
+int test_ft_calloc(void);
 
 // // ── Additional Functions ─────────────────────────────────────
 // int test_ft_substr(void);
