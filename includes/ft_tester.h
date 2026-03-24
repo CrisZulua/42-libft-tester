@@ -17,7 +17,7 @@ int test_ft_memcmp(void);
 int test_ft_strdup(void);
 
 // // ── strings.h ───────────────────────────────────────────────
-// int test_ft_bzero(void);
+int test_ft_bzero(void);
 
 // // ── ctype.h ─────────────────────────────────────────────────
 // int test_ft_isalpha(void);

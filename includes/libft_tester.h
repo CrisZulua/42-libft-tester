@@ -4,6 +4,7 @@
 #include "libft.h"
 #include <stdio.h>
 #include <string.h>
+#include <strings.h>
 
 // Type for pointer to function
 typedef int (*fttest)(void);

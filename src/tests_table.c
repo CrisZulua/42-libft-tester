@@ -15,7 +15,7 @@ const t_ftlist funct_list[] = {
 	{"ft_memchr", test_ft_memchr},
 	{"ft_memcmp", test_ft_memcmp},
 	{"ft_strdup", test_ft_strdup},
-	// {"ft_bzero", test_ft_bzero},
+	{"ft_bzero", test_ft_bzero},
 	// {"ft_isalpha", test_ft_isalpha},
 	// {"ft_isdigit", test_ft_isdigit},
 	// {"ft_isalnum", test_ft_isalnum},
