@@ -32,17 +32,17 @@ int test_ft_atoi(void);
 int test_ft_calloc(void);
 
 // // ── Additional Functions ─────────────────────────────────────
-// int test_ft_substr(void);
-// int test_ft_strjoin(void);
-// int test_ft_strtrim(void);
-// int test_ft_split(void);
-// int test_ft_itoa(void);
-// int test_ft_strmapi(void);
-// int test_ft_striteri(void);
-// int test_ft_putchar_fd(void);
-// int test_ft_putstr_fd(void);
-// int test_ft_putendl_fd(void);
-// int test_ft_putnbr_fd(void);
+int test_ft_substr(void);
+int test_ft_strjoin(void);
+int test_ft_strtrim(void);
+int test_ft_split(void);
+int test_ft_itoa(void);
+int test_ft_strmapi(void);
+int test_ft_striteri(void);
+int test_ft_putchar_fd(void);
+int test_ft_putstr_fd(void);
+int test_ft_putendl_fd(void);
+int test_ft_putnbr_fd(void);
 
 // // ── Bonus: t_list ────────────────────────────────────────────
 // int test_ft_lstnew(void);
