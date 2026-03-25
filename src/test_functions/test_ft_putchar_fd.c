@@ -34,6 +34,7 @@ int test_ft_putchar_fd(void)
 			passed++;
 		else
 			printf("\t❌   FAILED TEST %-2d ❌\tExpected : %-2c , Got : %-2c\n", i, tests[i].c, buf[0]);
+		rm_created_file(tests[i].path);
 	}
 
 	return (passed == num_tests);

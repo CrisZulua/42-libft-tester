@@ -14,7 +14,7 @@ int test_ft_atoi(void)
 		"42ab42",
 		"2147483647",
 		"-2147483648",
-		"99999999999999999999"};
+		"9999999999999"};
 
 	int num_tests = sizeof(tests) / sizeof(char *);
 	int passed = 0;

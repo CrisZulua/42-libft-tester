@@ -10,3 +10,10 @@ int run_test(char *ft_name)
 	printf("\nError : Unknown function (%s)\n", ft_name);
 	return (0);
 }
+
+void rm_created_file(char *path)
+{
+	char *rm_created_file = ft_strjoin("rm -f ", path);
+	system(rm_created_file);
+	free(rm_created_file);
+}

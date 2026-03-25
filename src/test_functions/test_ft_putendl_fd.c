@@ -35,6 +35,7 @@ int test_ft_putendl_fd(void)
 			passed++;
 		else
 			printf("\t❌   FAILED TEST %-2d ❌\tExpected : %-15s , Got : %-15s\n", i, tests[i].str, buf);
+		rm_created_file(tests[i].path);
 	}
 
 	return (passed == num_tests);

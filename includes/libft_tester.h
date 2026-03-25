@@ -22,6 +22,7 @@ typedef struct s_ftlist
 extern const t_ftlist funct_list[];
 
 int run_test(char *ft_name);
+void rm_created_file(char *path);
 
 #define RST "\x1b[0m"
 #define RED "\x1b[31m"

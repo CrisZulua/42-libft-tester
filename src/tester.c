@@ -44,6 +44,6 @@ int main(int argc, char **argv)
 	}
 
 	printf(BLUE "\n---------------------RESULTS--------------------------\n");
-	printf("Total tests passed: %d/%d.\n" RST, passed_test, strcmp(argv[1], "all") ? argc - 1 : 0);
+	printf("Total tests passed: %d/%d.\n" RST, passed_test, strcmp(argv[1], "all") ? argc - 1 : 34);
 	return (0);
 }
