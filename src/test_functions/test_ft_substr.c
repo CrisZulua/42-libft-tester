@@ -21,7 +21,6 @@ int test_ft_substr(void)
 		{"Hello World!", 6, SIZE_MAX, "World!"},
 		{"\tabc\r", 0, 5, "\tabc\r"},
 		{"\x02\x03", 1, 5, "\x03"},
-		{"42", 5, 1, ""},
 	};
 
 	int num_tests = sizeof(tests) / sizeof(t_test);

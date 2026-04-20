@@ -30,20 +30,25 @@ int test_ft_strlcpy(void)
 	int num_tests = sizeof(tests) / sizeof(tests[0]);
 	int passed = 0;
 	int cmp;
-	char *buff = (char *)calloc(50, 1);
+	char buff_ft[50];
+	char buff_sys[50];
 
+	
 	for (int i = 0; i < num_tests; i++)
 	{
-		size_t res_ft = ft_strlcpy(buff, tests[i].src, tests[i].dest_size);
-		cmp = strcmp(buff, tests[i].expected_dest);
+		memset(buff_ft, 0, 50);
+		memset(buff_sys, 0, 50);
+		size_t res_ft = ft_strlcpy(buff_ft, tests[i].src, tests[i].dest_size);
+		size_t res_sys = strlcpy(buff_sys, tests[i].src, tests[i].dest_size);
 
-		if (res_ft == tests[i].expected_len && !cmp)
+		cmp = strcmp(buff_sys, buff_ft);
+
+		if (res_ft == res_sys && !cmp)
 			passed++;
 		else if (cmp)
-			printf("\t❌   FAILED TEST %-2d ❌\tExpected : %-15s , Got : %-15s\n", i, tests[i].expected_dest, buff);
+			printf("\t❌   FAILED TEST %-2d ❌\tExpected : %-15s , Got : %-15s\n", i, buff_sys, buff_ft);
 		else
-			printf("\t❌   FAILED TEST %-2d ❌\tExpected : %-15lu , Got : %-15lu\n", i, tests[i].expected_len, res_ft);
+			printf("\t❌   FAILED TEST %-2d ❌\tExpected : %-15lu , Got : %-15lu\n", i, res_sys, res_ft);
 	}
-	free(buff);
 	return (passed == num_tests);
 }

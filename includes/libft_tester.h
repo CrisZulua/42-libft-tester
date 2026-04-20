@@ -8,6 +8,7 @@
 #include <string.h>
 #include <strings.h>
 #include <ctype.h>
+#include <bsd/string.h>
 
 // Type for pointer to function
 typedef int (*fttest)(void);

@@ -8,7 +8,7 @@ CC = cc
 FLAGS = -Wall -Werror -Wextra -Iincludes -I$(LIBFT_PATH)
 
 O_FLAGS = -MMD -MP
-L_FLAGS = -L$(LIBFT_PATH) -lft
+L_FLAGS = -L$(LIBFT_PATH) -lft -lbsd
 
 OBJDIR = objects
 
